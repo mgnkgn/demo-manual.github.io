@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    background-color: #575859;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 3.8rem;
+    position: fixed;
+    top: 0;
+    border-bottom: 2.1px solid #F2EBDF;
+    justify-items: center;
+    align-content: space-between;
+}
+nav a{
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: all .5s ease;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.4rem;
+}
+.logo{
+    width: 5rem;
+    height: 4rem;
+    display: flex;
+    
+}
+nav ul{
+    display: flex;
+    flex-flow: row-reverse;
+    list-style: none;
+    margin: 20px 0px;
+}
+nav ul li{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav a:hover{
+    color: #0C608A;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 8px #0D0000, 0 0 16px #0D0000;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    color: #F2EBDF;
+}
+#home strong{
+    color: #F2EBDF;
+}
+#home span{
+    color: #3f95c0;
+    font-weight: bolder;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../img/chemistry_lab_3.jpg) no-repeat center center/cover;
+    height: 750px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 0px dashed black;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+#about{
+    background-color: whitesmoke;
+    color: #0C608A;
+}
+.headings{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+    padding-top: 20px;
+}
+#about{
+    display: flex;
+    flex-direction: column;   
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #D9E8F5;
+    border-top:2px solid #0D0000 ;
+    color: #0D0000;
+}
+#about #intro p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.kit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0897CC;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 3.5px dashed #575859;
+    margin: 10px auto;
+    text-align: justify;
+    align-items: center;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #26455f 50%, #0D0000 50%);
+    background-size: 100% 200%;
+    transition: .9s;
+}
+.box p{
+    padding: 20px;
+}
+.row{
+    display: flex;
+}
+.box:hover{
+    background-position: left bottom;
+    color: #91BED4;
+    border: 3.5px dashed #0897CC;
+    box-shadow: 0 0 25px #0D0000;
+}
+#guv{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #D9E8F5;
+}
+.sec{
+    border-bottom: 1.5px solid #26455f;
+    border-top: 1.5px solid #0C608A;
+}
+.table6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+#dnaizo #intro p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+#dnaizo{
+    display: flex;
+    flex-direction: column;   
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #D9E8F5;
+    border-top:2px solid #0D0000 ;
+    color: #0D0000;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #0D0000;
+    color: #F2DE79;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: justify;
+    margin-bottom: 15px 0px;
+}
+.input {
+    padding: 5px;
+    margin: 10px;
+    width: 20rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.form #msg{
+    width: 20rem;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.form .btn{
+    background-color: transparent;
+    border: 1.5px dashed #F2DE79;
+    font-family: 'Abril Fatface', cursive ;
+    padding: 1rem 1rem;
+    color: #F2DE79;
+    outline: none;
+    transition: .6s ease;
+    border-radius: 10px;
+    width: 20rem;
+    margin-bottom: 10px;
+    z-index: +1;
+}
+.form .btn:hover{
+    cursor: pointer;
+    background-color: #F2EBDF;
+    opacity: 0.6;
+    color: #0D0000;
+    border: 1.5px dashed #0D0000;
+    font-size: 1.1rem;
+    box-shadow: 0 0 5px #F2DE79, 0 0 10px #F2DE79, 0 0 15px #F2DE79;
+    font-weight: bold;
+}
